@@ -1,5 +1,6 @@
 "use client"
 
+import UserChat from '@/components/UserChat';
 import {
   QueryClient,
   QueryClientProvider,
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <>
     <QueryClientProvider client={queryClient}>
-      Hello Chat AI LLM
+      <UserChat/>
     </QueryClientProvider>
     </>
   );
