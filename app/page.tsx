@@ -1,5 +1,6 @@
 "use client"
 
+import { Toaster } from 'sonner'
 import UserChat from '@/components/UserChat';
 import {
   QueryClient,
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
     <QueryClientProvider client={queryClient}>
+      <Toaster richColors position='top-center'/>
       <UserChat/>
     </QueryClientProvider>
     </>

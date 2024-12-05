@@ -6,6 +6,7 @@ import {
   MessageCircle, Sparkles, Sun, Moon, 
   Check, X, Info 
 } from 'lucide-react';
+import { toast } from 'sonner'
 import { useChat } from '@/hooks/useAIChat';
 import { cn } from '@/lib/utils';
 
@@ -65,6 +66,7 @@ export const UserChat: React.FC = () => {
 
   const handleSettingsSave = () => {
     setShowSettings(false);
+    toast.success('Settings saved successfully !')
   };
 
     return (
@@ -224,7 +226,7 @@ export const UserChat: React.FC = () => {
                     Cancel
                   </button>
                   <button 
-                    onClick={() => setShowSettings(false)}
+                    onClick={handleSettingsSave}
                     className={cn(
                       "px-4 py-2 rounded-md",
                       theme === 'light'
@@ -266,17 +268,17 @@ export const UserChat: React.FC = () => {
                     {message.role === 'user' ? (
                       <User className="w-4 h-4" />
                     ) : (
-                      <Brain className="w-4 h-4" />
+                      <Brain className={cn("w-4 h-4", theme === 'light' ? 'text-blue-600' : 'text-black')} />
                     )}
-                    <span className="text-sm font-medium">
+                    <span className={cn("text-sm font-medium", theme === 'light' && message.role == 'user' ? 'text-white' : message.role == 'user' ? 'text-white' : 'text-black')}>
                       {message.role === 'user' ? 'You' : 'Assistant'}
                     </span>
                   </div>
                   
                   {message.pending ? (
                     <div className="flex items-center space-x-2">
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                      <span>Thinking...</span>
+                      <Loader2 className="w-4 h-4 animate-spin text-black" />
+                      <span className='text-black'>Thinking...</span>
                     </div>
                   ) : (
                     <div className={message.role === 'user' ? 'text-white' : 'text-gray-800'}>
@@ -305,7 +307,7 @@ export const UserChat: React.FC = () => {
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
-              className="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className="flex-1 p-3 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               rows={1}
               disabled={isLoading}
             />
