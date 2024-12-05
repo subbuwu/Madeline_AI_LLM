@@ -1,4 +1,4 @@
-# AI Chatbot LLM [Watch the app in action](https://drive.google.com/file/d/1T3wNQchCT1pRW6UjPe9kpM4lxl6Glxae/view?usp=sharing)
+# AI Chatbot LLM [(Watch the app in action)](https://drive.google.com/file/d/1T3wNQchCT1pRW6UjPe9kpM4lxl6Glxae/view?usp=sharing)
 
 ## Project Overview
 
