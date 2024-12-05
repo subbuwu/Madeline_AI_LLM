@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Chatbot LLM
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+An advanced AI chatbot built with Next.js, leveraging Hugging Face's Qwen/QwQ-32B-Preview model, featuring dynamic UI interactions, state management, and adaptive response generation.
 
+## Key Features
+
+- **Advanced AI Interaction**
+  - Powered by Qwen/QwQ-32B-Preview large language model
+  - Configurable response creativity levels
+  - Support for long, short, and medium-length responses
+
+- **Responsive UI Design**
+  - Built with Tailwind CSS
+  - Light and dark mode support
+  - Smooth animations via Framer Motion
+
+- **Flexible Configuration**
+  - Model creativity settings
+  - Response length customization
+  - Intuitive settings panel
+
+## Tech Stack
+
+- **Frontend**: Next.js
+- **Styling**: Tailwind CSS
+- **State Management**: Tanstack Query
+- **Animations**: Framer Motion
+- **Language**: TypeScript
+- **AI Model**: Hugging Face Qwen/QwQ-32B-Preview
+
+
+## Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/ai-chatbot-llm.git
+cd ai-chatbot-llm
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env.local` file in the project root
+```bash
+HUGGINGFACE_API_TOKEN=your_huggingface_api_token
+```
+
+## Running the Project
+
+Development Mode:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Production Build:
+```bash
+npm run build
+npm run start
+# or
+yarn build
+yarn start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/src
+├── components/       # Reusable React components
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+└── types/            # TypeScript type definitions
+```
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Your Name - [Your Email]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Project Link: [https://github.com/yourusername/ai-chatbot-llm](https://github.com/yourusername/ai-chatbot-llm)
