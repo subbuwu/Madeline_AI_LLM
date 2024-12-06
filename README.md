@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-An advanced AI chatbot built with Next.js, leveraging Hugging Face's Qwen/QwQ-32B-Preview model, featuring dynamic UI interactions, state management, and adaptive response generation.
+An simple AI chatbot built with Next.js, leveraging Hugging Face's Qwen/QwQ-32B-Preview model, featuring dynamic UI interactions, state management, and adaptive response generation.
 
 ## Key Features
 
@@ -19,7 +19,6 @@ An advanced AI chatbot built with Next.js, leveraging Hugging Face's Qwen/QwQ-32
 - **Flexible Configuration**
   - Model creativity settings
   - Response length customization
-  - Intuitive settings panel
 
 ## Tech Stack
 
